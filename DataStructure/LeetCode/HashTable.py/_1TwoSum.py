@@ -3,6 +3,8 @@
 回傳陣列裡面任兩個數字相加等於其數字分別的 index
 '''
 
+# https://leetcode.com/problems/two-sum/
+
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
