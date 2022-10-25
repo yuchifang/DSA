@@ -1,4 +1,7 @@
-from typing import Counter
+# from typing import Counter
+
+
+from collections import Counter
 
 
 cnt = Counter([1, 1, 2, 2, 3, 4, 5, 6])

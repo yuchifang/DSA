@@ -13,20 +13,27 @@ class Solution:
             else:
                 dict1[item] = 1
 
-        for item in nums2:
-            if item in dict2:
-                dict2[item] += 1
-            else:
-                dict2[item] = 1
+        # for item in nums2:
+        #     if item in dict2:
+        #         dict2[item] += 1
+        #     else:
+        #         dict2[item] = 1
 
-        for key2 in dict2:
-            if key2 in dict1:
-                if dict1[key2] > dict2[key2]:
-                    for item in range(dict2[key2]):
-                        returnList.append(key2)
-                else:
-                    for item in range(dict1[key2]):
-                        returnList.append(key2)
+        # for key2 in dict2:
+        #     if key2 in dict1:
+        #         if dict1[key2] > dict2[key2]:
+        #             for item in range(dict2[key2]):
+        #                 returnList.append(key2)
+        #         else:
+        #             for item in range(dict1[key2]):
+        #                 returnList.append(key2)
+
+        # todo 寫法二
+        for item in nums2:
+            if item in dict1 and dict1[item] >0:
+                dict1[item]-=1
+                returnList.append(item)
+
         return returnList
 # 解法二
 
